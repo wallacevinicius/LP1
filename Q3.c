@@ -6,6 +6,7 @@ int main(){
     int i;
     char word[100], drow[100];
 
+    //Get the word form user
     printf("Type your word: ");
     fgets(word, 100, stdin);
 
@@ -14,9 +15,9 @@ int main(){
         word[strlen(word)-1] = '\0';
 
     //Make all word become uppercase
-    for(i = 0; word[i]; i++){
+    for(i = 0; word[i]; i++)
         word[i] = toupper(word[i]);
-    }
+    
     //Take word value to drow
     strcpy(drow, word);
 
